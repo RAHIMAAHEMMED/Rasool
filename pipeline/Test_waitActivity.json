@@ -1,0 +1,17 @@
+{
+	"name": "Test_waitActivity",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait for 10S",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
+				}
+			}
+		],
+		"annotations": []
+	}
+}
