@@ -1,18 +1,17 @@
 {
-	"name": "LS_adl",
+	"name": "LS_azuresqldbk",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
-		"type": "AzureBlobFS",
+		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"url": "https://datalakestore3.dfs.core.windows.net/",
-			"accountKey": {
+			"connectionString": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
 					"referenceName": "LS_AzureKeyVaultConnection",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "ADLSConnectionkey"
+				"secretName": "SQLDBKConnectionstring"
 			}
 		}
 	}
